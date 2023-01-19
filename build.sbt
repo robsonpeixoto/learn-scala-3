@@ -1,5 +1,9 @@
 val scala3Version = "3.2.2"
 
+scalacOptions ++= Seq(
+  "-explain"
+)
+
 lazy val root = project
   .in(file("."))
   .settings(
