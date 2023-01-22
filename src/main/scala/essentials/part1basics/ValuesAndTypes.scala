@@ -19,4 +19,3 @@ object ValuesAndTypes:
   val aString: String = "Scala"
 
   def main(args: Array[String]): Unit = {}
-

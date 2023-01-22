@@ -29,4 +29,3 @@ object Expressions:
 
   def main(args: Array[String]): Unit =
     println(anIfExpression)
-
