@@ -1,7 +1,8 @@
 val scala3Version = "3.2.2"
 
 scalacOptions ++= Seq(
-  "-explain"
+  "-explain",
+  "-new-syntax"
   // "-new-syntax",
   // "-indent",
   // "-rewrite"
