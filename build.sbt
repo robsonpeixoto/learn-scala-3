@@ -2,6 +2,9 @@ val scala3Version = "3.2.2"
 
 scalacOptions ++= Seq(
   "-explain"
+  // "-new-syntax",
+  // "-indent",
+  // "-rewrite"
 )
 
 lazy val root = project

@@ -1,6 +1,6 @@
 package essentials.part1basics
 
-object ValuesAndTypes {
+object ValuesAndTypes:
 
   // values
   val meaningOfLife: Int = 42
@@ -20,4 +20,3 @@ object ValuesAndTypes {
 
   def main(args: Array[String]): Unit = {}
 
-}

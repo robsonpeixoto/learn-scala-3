@@ -2,7 +2,7 @@ package essentials.part1basics
 
 import scala.annotation.tailrec
 
-object Functions {
+object Functions:
 
   // function = reusable piece of code that you can invoke with some arguments and return a result
   def aFunction(a: String, b: Int): String =
@@ -15,8 +15,8 @@ object Functions {
 
   // function can be recursive
   def stringConcatenation(str: String, n: Int): String =
-    if (n == 0) ""
-    else if (n == 1) str
+    if n == 0 then ""
+    else if n == 1 then str
     else str + stringConcatenation(str, n - 1)
 
   val scalax3 = stringConcatenation("Scala", 3)
@@ -40,29 +40,29 @@ object Functions {
   def factorial(n: Int): Int =
     @tailrec
     def rec(n: Int, acc: Int): Int =
-      if (n == 0) 0
-      else if (n == 1) acc
+      if n == 0 then 0
+      else if n == 1 then acc
       else rec(n - 1, acc * n)
     rec(n, 1)
 
   def fibonacci(n: Int): Int =
     @tailrec
     def rec(i: Int, p1: Int, p2: Int): Int =
-      if (i == n) p1 + p2
+      if i == n then p1 + p2
       else rec(i + 1, p2, p1 + p2)
 
-    if (n <= 0) 0
-    else if (n == 1) 1
-    else if (n == 2) 1
+    if n <= 0 then 0
+    else if n == 1 then 1
+    else if n == 2 then 1
     else rec(3, 1, 1)
 
   def isPrime(n: Int): Boolean =
     def rec(i: Int, res: Boolean): Boolean =
-      if (i == 1) res
+      if i == 1 then res
       else rec(i - 1, res && (n % i != 0))
 
-    if (n <= 0) false
-    else if (n == 1) true
+    if n <= 0 then false
+    else if n == 1 then true
     else rec(n - 1, true)
 
   def main(args: Array[String]): Unit =
@@ -72,4 +72,3 @@ object Functions {
     println(s"3 => ${isPrime(3)}")
     println(s"4 => ${isPrime(4)}")
     println(s"5 => ${isPrime(5)}")
-}

@@ -5,7 +5,7 @@ import scala.annotation.tailrec
 object DefaultArgs extends App:
   @tailrec
   def sumUntilTailRec(x: Int, accumulator: Int = 0): Int =
-    if (x <= 0) accumulator
+    if x <= 0 then accumulator
     else sumUntilTailRec(x - 1, accumulator + x)
 
   println(sumUntilTailRec(10))
