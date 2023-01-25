@@ -18,3 +18,4 @@ jobs:
           java-version: "17"
           cache: "sbt"
       - run: sbt package
+      - run: sbt scalafmtCheckAll
