@@ -1,0 +1,5 @@
+pre-commit:
+  commands:
+    format-scala:
+      glob: "{*.scala,build.sbt}"
+      run: sbt scalafmtOnly {staged_files} && git add {staged_files}
