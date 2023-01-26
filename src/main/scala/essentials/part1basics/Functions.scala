@@ -65,10 +65,12 @@ object Functions:
     else if n == 1 then true
     else rec(n - 1, true)
 
-  def main(args: Array[String]): Unit =
-    println(s"0 => ${isPrime(0)}")
-    println(s"1 => ${isPrime(1)}")
-    println(s"2 => ${isPrime(2)}")
-    println(s"3 => ${isPrime(3)}")
-    println(s"4 => ${isPrime(4)}")
-    println(s"5 => ${isPrime(5)}")
+@main def FunctionsMain =
+  import Functions.*
+
+  println(s"0 => ${isPrime(0)}")
+  println(s"1 => ${isPrime(1)}")
+  println(s"2 => ${isPrime(2)}")
+  println(s"3 => ${isPrime(3)}")
+  println(s"4 => ${isPrime(4)}")
+  println(s"5 => ${isPrime(5)}")

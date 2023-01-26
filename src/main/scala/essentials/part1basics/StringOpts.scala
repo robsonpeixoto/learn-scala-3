@@ -1,6 +1,6 @@
 package essentials.part1basics
 
-object StringOpts extends App:
+object StringOpts:
   val aString: String = "Hello, I am learning Scala"
 
   // string functions
@@ -32,6 +32,9 @@ object StringOpts extends App:
 
   // raw-interpolation
   val escapes = raw"This is a \n newline"
+
+@main def StringOptsMain =
+  import StringOpts.*
 
   println("hi")
   println(greeting)

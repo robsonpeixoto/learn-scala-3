@@ -1,6 +1,6 @@
 package essentials.part1basics
 
-object CBNvsCBV extends App:
+object CBNvsCBV:
   // CBV = call by value = arguments are evaluated before function invocation
   def aFunction(arg: Int): Int = arg + 1
   val aComputation = aFunction(23 + 67)
@@ -16,6 +16,9 @@ object CBNvsCBV extends App:
   def printTwiceByName(x: => Long): Unit =
     println("By name: " + x)
     println("By name: " + x)
+
+@main def CBNvsCBVMain() =
+  import CBNvsCBV.*
 
   printTwiceByValue({ println("hi"); System.nanoTime() })
   printTwiceByName({ println("hi"); System.nanoTime() })

@@ -1,5 +1,4 @@
 object Inheritance:
-
   class Animal:
     val creatureType = "wild"
     def eat(): Unit = println("nomnomnom")
@@ -44,8 +43,10 @@ object Inheritance:
     def eat(dog: Dog, person: Person): Unit = println("I'm eating the dog AND a human")
     // def eat(): Int = 45
 
-  def main(args: Array[String]): Unit =
-    cat.eat()
-    cat.crunch()
-    dog.eat()
-    println(dog)
+@main def InheritanceMain =
+  import Inheritance.*
+
+  cat.eat()
+  cat.crunch()
+  dog.eat()
+  println(dog)

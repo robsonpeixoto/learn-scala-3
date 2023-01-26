@@ -27,5 +27,7 @@ object Expressions:
 
   // everything is an expression
 
-  def main(args: Array[String]): Unit =
-    println(anIfExpression)
+@main def ExpressionsMain =
+  import Expressions.*
+
+  println(anIfExpression)

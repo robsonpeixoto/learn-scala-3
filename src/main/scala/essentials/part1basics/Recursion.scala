@@ -29,7 +29,9 @@ object Recursion:
       else rec(n - 1, acc + str)
     rec(n, "")
 
-  def main(args: Array[String]): Unit =
-    println(stringConcatenation("oi", 3))
-    println(stringConcatenation("oi", 0))
-    println(stringConcatenation("oi", 1))
+@main def RecursionMain =
+  import Recursion.*
+
+  println(stringConcatenation("oi", 3))
+  println(stringConcatenation("oi", 0))
+  println(stringConcatenation("oi", 1))

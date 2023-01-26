@@ -2,7 +2,7 @@ package essentials.part2oop
 
 import java.time.LocalDate
 
-object OOBasics extends App:
+object OOBasics:
 
   // classes
   class Person(val name: String, age: Int): // constructor signature
@@ -32,6 +32,9 @@ object OOBasics extends App:
     def decrement: Counter = decrement(1)
     def decrement(n: Int): Counter = increment(-n)
     def print: Unit = println(count)
+
+@main def OOBasicsMain =
+  import OOBasics.*
 
   println("== PERSON ==")
   val aPerson = new Person("John", 26)
